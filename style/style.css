@@ -1,0 +1,370 @@
+/* Style pour les éléments */
+
+@import url('https://www.dafont.com/ninja-naruto.font');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Outfit', sans-serif;
+    box-sizing: border-box;
+    transition: all 300ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button, input[type=submit]{
+    cursor: pointer;
+    border : 2px solid #000000;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    color: #000000;
+    border-radius: 30px;
+}
+
+input[type=submit]:hover, button:hover{
+    background-color: #cdcdcd;
+    color: #BF0000;
+}
+
+li {
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2, h1{
+    color: #BF0000;
+    font-family: Ninja Naruto;
+    text-shadow: 4px 4px #FFFFFF;
+}
+
+h1{
+    margin-top: -100px;
+    font-size: 100px;
+}
+
+h2{
+    margin-top: 75px;
+    font-size: 100px;
+}
+
+section {
+    background-color: #000000;
+}
+
+.conteneur {
+    padding: 20px 0;
+    width: 100%;
+}
+
+li a{
+    color: #000000;
+    font-size: 25px
+}
+
+li a:hover{
+    color: #BF0000;
+}
+
+/* Nav */
+
+nav{
+    z-index: 1;
+    background-color: #FFFFFF;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width:220vh;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+    position: fixed;
+    height: 80px;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+}
+
+.Liste_nav{
+    display: flex;
+    align-items: baseline;
+}
+
+.Lien_nav{
+    margin: 0 12px;
+}
+
+/* Header */
+
+.paragraphe_header{
+    color: #FFFFFF;
+    height: 100%;
+    padding: 30px;
+    font-size: 25px;
+    line-height: 2;
+    max-width: 700px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 110vh;
+    margin: 0 auto;
+}
+
+.Titre_header{
+    margin-left: 3%;
+    font-size: 80px;
+    text-align: left;
+    line-height: 1;
+    margin-bottom: 30px;
+    margin-top: 6%;
+}
+  
+.Button_header{
+    padding: 10px 25px;
+    font-size: 24px;
+    margin-left: 215px;
+}
+
+#Header{
+    margin: 0;
+    height: 100vh;
+    background-attachment:fixed;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/header.jpeg');
+    background-size: cover;
+}
+
+/* A propos */
+
+#entreprise{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    justify-content: center
+}
+
+.paragraphe_entreprise{
+    color: #FFFFFF;
+    height: 100%;
+    padding: 100px;
+    font-size: 35px;
+    line-height: 2;
+    margin-bottom: 30px;
+    max-width: 70%;
+    margin: auto;
+}
+
+/* Shop */
+
+#shop{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/shop.png');
+    background-size: cover;  
+    background-attachment:fixed;
+}
+
+h3{
+    margin-left: 12px;
+    margin-bottom: 32px;
+    font-size: 35px ;
+    color: #BF0000;
+    font-family: Ninja Naruto;
+}
+
+.Liste_shop{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content:center;
+}
+
+.element_shop{
+    display: block;
+    position: relative;
+    width: 28%;
+    margin: 2%;
+}
+
+.Produit{
+  text-align: center;
+}
+
+.image_shop {
+    margin-top: -50px;
+    margin-bottom: -50px;
+    width: 75%;
+    height: 75%;
+}
+
+.texte_shop{
+    font-size: 25px ;
+    color: #BF0000;
+    font-family: Ninja Naruto;
+}
+
+.button_shop{
+    margin-top: 50px;
+    padding: 10px 50px;
+    font-size: 24px;
+}
+
+/* Contact */
+
+#contact{
+    height: 150vh;
+}
+
+.formulaire{
+    max-width: 95%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.paragraphe_contact{
+    color: #FFFFFF;
+    font-size: 25px;
+    height: 100%;
+    padding: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titre_contact{
+    text-align: center;
+}
+
+.texte_formulaire{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.input_formulaire{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 30px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-size: 15px;
+    box-sizing : border-box;
+    resize: vertical;
+}
+
+.bouton_contact{
+    text-align: center;
+}
+
+input[type=submit]{
+    padding: 10px 40px;
+    font-size: 24px;
+}
+
+input[type=textarea]{
+    height: 500px;
+}
+
+/* Footer */
+
+footer{
+    position: relative;
+    background-color: #FFFFFF;
+    display: flex;
+    padding: 0 0;
+}
+
+.ligne_footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mentions{
+    color: #000000;
+}
+
+.mentions:hover{
+    color: #BF0000;
+}
+
+#backToTop{
+    width: 40px;
+    height: 40px;
+}
+
+.réseaux_sociaux{
+    width: 100%;
+    max-width: 850px;
+    display: flex;
+    justify-content: space-around;
+    margin: 28px 0;
+}
+
+.adroite{
+    float:right;
+    margin-right: 1%;
+}
+
+/* Responsive */
+
+@media (max-width: 720px) {
+
+    h2{
+        font-size: 60px;
+    }
+
+    h3{
+        font-size: 20px; 
+    }
+
+    #shop{
+        height: 80vh;
+    }
+
+    .button_shop{
+        margin-top: 50px;
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+
+    .texte_shop{
+        margin-top: 20px;
+        font-size: 15px;
+    }
+
+    .paragraphe_entreprise{
+        font-size: 20px;
+        max-width: 90%;
+    }
+
+    .réseaux_sociaux{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 641px) {
+
+    h1{
+        margin-top: -50px;
+        font-size: 70px;
+    }
+
+    .Button_header{
+        margin-left: 100px;
+    }
+
+    .réseaux_sociaux{
+        font-size: 10px;
+    }
+
+}
